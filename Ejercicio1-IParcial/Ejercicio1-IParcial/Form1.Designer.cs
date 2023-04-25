@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NumeroTextBox1 = new System.Windows.Forms.TextBox();
             this.ResultadoTextBox2 = new System.Windows.Forms.TextBox();
-            this.CalcularButton1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.CalcularButton1 = new System.Windows.Forms.Button();
             this.LimpiarButton2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -60,17 +60,6 @@
             this.ResultadoTextBox2.Size = new System.Drawing.Size(322, 22);
             this.ResultadoTextBox2.TabIndex = 2;
             // 
-            // CalcularButton1
-            // 
-            this.CalcularButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalcularButton1.Location = new System.Drawing.Point(159, 301);
-            this.CalcularButton1.Name = "CalcularButton1";
-            this.CalcularButton1.Size = new System.Drawing.Size(187, 51);
-            this.CalcularButton1.TabIndex = 3;
-            this.CalcularButton1.Text = "Calcular";
-            this.CalcularButton1.UseVisualStyleBackColor = true;
-            this.CalcularButton1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -81,16 +70,27 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Resultado:";
             // 
+            // CalcularButton1
+            // 
+            this.CalcularButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalcularButton1.Location = new System.Drawing.Point(148, 301);
+            this.CalcularButton1.Name = "CalcularButton1";
+            this.CalcularButton1.Size = new System.Drawing.Size(187, 51);
+            this.CalcularButton1.TabIndex = 6;
+            this.CalcularButton1.Text = "Calcular";
+            this.CalcularButton1.UseVisualStyleBackColor = true;
+            this.CalcularButton1.Click += new System.EventHandler(this.CalcularButton1_Click);
+            // 
             // LimpiarButton2
             // 
             this.LimpiarButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LimpiarButton2.Location = new System.Drawing.Point(423, 301);
+            this.LimpiarButton2.Location = new System.Drawing.Point(437, 301);
             this.LimpiarButton2.Name = "LimpiarButton2";
             this.LimpiarButton2.Size = new System.Drawing.Size(187, 51);
-            this.LimpiarButton2.TabIndex = 5;
+            this.LimpiarButton2.TabIndex = 7;
             this.LimpiarButton2.Text = "Limpiar";
             this.LimpiarButton2.UseVisualStyleBackColor = true;
-            this.LimpiarButton2.Click += new System.EventHandler(this.LimpiarButton_Click);
+            this.LimpiarButton2.Click += new System.EventHandler(this.LimpiarButton2_Click);
             // 
             // Form1
             // 
@@ -98,8 +98,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 448);
             this.Controls.Add(this.LimpiarButton2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.CalcularButton1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ResultadoTextBox2);
             this.Controls.Add(this.NumeroTextBox1);
             this.Controls.Add(this.label1);
@@ -115,8 +115,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox NumeroTextBox1;
         private System.Windows.Forms.TextBox ResultadoTextBox2;
-        private System.Windows.Forms.Button CalcularButton1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button CalcularButton1;
         private System.Windows.Forms.Button LimpiarButton2;
     }
 }

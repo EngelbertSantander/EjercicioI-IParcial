@@ -17,13 +17,7 @@ namespace Ejercicio1_IParcial
             InitializeComponent();
         }
 
-        private void LimpiarButton_Click(object sender, EventArgs e)
-        {
-            NumeroTextBox1.Clear();
-            ResultadoTextBox2.Clear();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void CalcularButton1_Click(object sender, EventArgs e)
         {
             int numero;
             numero = Convert.ToInt32(NumeroTextBox1.Text);
@@ -32,23 +26,29 @@ namespace Ejercicio1_IParcial
 
             if (result == 0)
             {
-                ResultadoTextBox2.Text = "El numero ingresado es par y positivo";
+                ResultadoTextBox2.Text = "El número ingresado es par y positivo";
             }
 
             else
             {
-                ResultadoTextBox2.Text = "El numero ingresado es impar y positivo";
+                ResultadoTextBox2.Text = "El número ingresado es impar y positivo";
             }
 
             if (result > 0)
             {
-                ResultadoTextBox2.Text = "El numero ingresado es positivo";
+                ResultadoTextBox2.Text = "El número ingresado es positivo";
 
             }
             else
             {
-                ResultadoTextBox2.Text = "El numero ingresado es negativo";
+                ResultadoTextBox2.Text = "El número ingresado es negativo";
             }
+        }
+
+        private void LimpiarButton2_Click(object sender, EventArgs e)
+        {
+            NumeroTextBox1.Clear();
+            ResultadoTextBox2.Clear();
         }
     }
 }
